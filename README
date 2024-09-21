@@ -1,0 +1,10 @@
+Notes:
+
+1. main.py is the entry point for running the application.
+
+2. Due to lack of time, I did not handle the following issues:
+    - Scalability: The find_operable_components method in ComponentFinder might become inefficient with a large number of components due to its linear search approach.
+    - Regex Issue: The regular expressions used in VoltageRangeParser and TemperatureRangeParser might not cover all possible formats of voltage and temperature ranges, especially if new files with new formats are added in the future.
+      For example, it might not handle cases where there are multiple spaces or no spaces around the “to” keyword, or when "1v to 5v" is writen instead of "1V to 5V"
+    - Error Handling: The code lacks comprehensive error handling, especially in file operations and parsing methods. This could lead to unhandled exceptions and crashes.
+    - Logging
